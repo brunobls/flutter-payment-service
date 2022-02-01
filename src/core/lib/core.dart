@@ -7,6 +7,7 @@ late GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 abstract class BuilderBase {
   List<Module> get modules;
+  List<Service> get services;
 
   Map<String, WidgetBuilderArgs> get builderRoutes;
 
@@ -27,12 +28,22 @@ abstract class BuilderBase {
         module.registerInjections();
       }
     }
+    if (services.isNotEmpty) {
+      for (Service service in services) {
+        service.registerInjections();
+      }
+    }
   }
 
   void registerListeners() {
     if (modules.isNotEmpty) {
       for (Module module in modules) {
         module.registerListeners();
+      }
+    }
+    if (services.isNotEmpty) {
+      for (Service service in services) {
+        service.registerListeners();
       }
     }
   }
@@ -54,6 +65,14 @@ abstract class Module {
   String get moduleName;
 
   Map<String, WidgetBuilderArgs> get routes;
+
+  void Function() get registerInjections;
+
+  void Function() get registerListeners;
+}
+
+abstract class Service {
+  String get serviceName;
 
   void Function() get registerInjections;
 

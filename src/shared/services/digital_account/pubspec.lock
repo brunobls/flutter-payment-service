@@ -46,17 +46,10 @@ packages:
   core:
     dependency: "direct main"
     description:
-      path: "../core"
+      path: "../../../core"
       relative: true
     source: path
     version: "0.0.1"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.4"
   dartz:
     dependency: transitive
     description:
@@ -67,14 +60,7 @@ packages:
   dependencies:
     dependency: "direct main"
     description:
-      path: "../shared/dependencies"
-      relative: true
-    source: path
-    version: "0.0.1"
-  digital_account:
-    dependency: "direct main"
-    description:
-      path: "../shared/services/digital_account"
+      path: "../../dependencies"
       relative: true
     source: path
     version: "0.0.1"
@@ -109,13 +95,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "7.2.0"
-  home:
-    dependency: "direct main"
-    description:
-      path: "../modules/home"
-      relative: true
-    source: path
-    version: "0.0.1"
   lints:
     dependency: transitive
     description:

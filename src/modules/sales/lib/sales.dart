@@ -1,4 +1,4 @@
-library home;
+library sales;
 
 /// A Calculator.
 class Calculator {

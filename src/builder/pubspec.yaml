@@ -11,9 +11,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  dependencies:
+    path: ../shared/dependencies
   core:
     path: ../core
+  home:
+    path: ../modules/home
+  digital_account:
+    path: ../shared/services/digital_account
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
