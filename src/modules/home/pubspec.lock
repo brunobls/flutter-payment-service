@@ -50,6 +50,27 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  dartz:
+    dependency: transitive
+    description:
+      name: dartz
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.10.1"
+  dependencies:
+    dependency: transitive
+    description:
+      path: "../../shared/dependencies"
+      relative: true
+    source: path
+    version: "0.0.1"
+  digital_account:
+    dependency: "direct main"
+    description:
+      path: "../../shared/services/digital_account"
+      relative: true
+    source: path
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -74,6 +95,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get_it:
+    dependency: transitive
+    description:
+      name: get_it
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "7.2.0"
   lints:
     dependency: transitive
     description:

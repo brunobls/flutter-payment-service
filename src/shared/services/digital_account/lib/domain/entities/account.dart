@@ -10,6 +10,7 @@ class Account {
   double get currencyBalance => _balance / 100;
   int get cc => _cc;
   int get ag => _ag;
+  List<Card> get cards => _cards;
 
   Account({
     required int balance,

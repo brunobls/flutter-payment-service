@@ -13,6 +13,8 @@ dependencies:
     sdk: flutter
   core:
     path: ../../core
+  digital_account:
+    path: ../../shared/services/digital_account
 
 dev_dependencies:
   flutter_test:
